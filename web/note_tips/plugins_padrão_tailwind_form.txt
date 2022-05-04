@@ -1,0 +1,16 @@
+O tailwindcss possui alguns plugins padrões que melhoram a estilização após intalá-los:
+
+https://tailwindcss.com/docs/installation (procurar por Oficial Plugins)
+
+https://github.com/tailwindlabs/tailwindcss-forms
+
+////////////////////////////////////////////////////////////////
+
+Para remover scrollbar padrão do navegador:
+
+https://www.npmjs.com/package/tailwind-scrollbar
+
+Adcionar configuração para mudar estilo da scrollbar:
+# scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin
+
+

@@ -1,19 +1,20 @@
+
 module.exports = {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
-      colors: {
+      colors: { //posso criar minhas próprias estilizações
         brand: {
           300: "#996DFF",
           500: '#8257e6',
         }
       },
-      borderRadius: {
-        md: '4px',
+      borderRadius: { (rounded-md)
+        md: '4px', // consigo alterar uma estilização padrão
       }
     },
   },
-  plugins: [
+  plugins: [// instalação de plugins externos para melhorar a estilização
     require('@tailwindcss/forms'),
     require('tailwind-scrollbar'),
   ],
