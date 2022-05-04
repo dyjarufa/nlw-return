@@ -1,0 +1,42 @@
+Radix
+
+headless ui - totalmente integrada com o tailwindcss
+
+https://headlessui.dev/react/popover
+
+
+
+import { ChatTeardropDots } from "phosphor-react";
+import { useState } from "react";
+import { Popover } from '@headlessui/react';
+
+export function Widget() {
+
+  // a lib headless ui possui cuidará de todo gerenciamento de para realizar a animção do popover
+  //Por isso posso omitir minhs regas de estado
+  /* const [isOpenWidget, setIsOpenWidget] = useState(false);
+
+  function toggleIsOpenWidget() {
+    setIsOpenWidget(!isOpenWidget);
+  }
+ */
+  return (
+    /* Agora posso substituir minhas tags html pelos elementos do headless ui */
+    <Popover className="absolute bottom-5 right-5">
+      {/* {isOpenWidget && } <p>hello world</p>}*/
+      
+      <Popover.Panel>hello world</Popover.Panel>
+      
+      <Popover.Button onClick={toggleIsOpenWidget} className="bg-brand-500 rounded-full px-3 h-12 text-white flex items-center group">
+        <ChatTeardropDots className="w-6 h-6" />
+
+        <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-linear">
+          <span className="pl-2"></span>
+          Feedback
+        </span>
+      </Popover.Button>
+    </Popover>
+  );
+}
+
+

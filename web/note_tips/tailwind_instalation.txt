@@ -1,0 +1,5 @@
+// intalação do tailwindcss  junto com a ferramenta  postcss.config.js para funcionar com o VITE
+   >  npx tailwindcss init -p
+
+// postcss.config.js - faz uma integração de forma automática junto com o VITE para observar as mudanças no css
+  > npm install -D tailwindcss postcss autoprefixer
