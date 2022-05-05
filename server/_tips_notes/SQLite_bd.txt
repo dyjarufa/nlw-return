@@ -1,9 +1,0 @@
-SQLite: 
-  - simples pois  não precisa instalar nenhuma outra ferramenta e será criado um arquivo físico
-
-
-ORM Prisma: https://www.prisma.io/
-  - Facilita para trabalhar com operações no banco de dados
-  - Muda a forma como a aplicação se comunica com o bd
-  
-  npm i prisma -D

@@ -1,0 +1,18 @@
+SQLite: 
+- simples pois  não precisa instalar nenhuma outra ferramenta e será criado um arquivo físico
+
+ORM Prisma: https://www.prisma.io/
+- Facilita para trabalhar com operações no banco de dados
+- Muda a forma como a aplicação se comunica com o bd
+
+npm i prisma -D // ambiente de desenvolvimento
+npm i @prisma/client // ambiente de produção
+
+// Comando
+npx prisma init
+- irá criar a pasta prisma/
+- criação do arquivo .env
+- criação do .gitignore
+
+// Integração do SQlite do com o prisma:
+https://www.prisma.io/docs/concepts/database-connectors/sqlite

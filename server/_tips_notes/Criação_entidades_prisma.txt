@@ -1,0 +1,26 @@
+model Feedback {
+  // colunas da tabela
+  // id String @id // informa primary key
+  // id Int    @id @default(autoincrement()) // informa primary key e autoincrement
+  id String @id @default(uuid()) // usar uuid para gerar um id
+
+  type       String
+  comment    String
+  screenshot String? // o ? informa que será um campo opcional
+
+  @@map("feedbacks")
+}
+
+// para criar a tabela:
+# npx prisma migrate dev
+- dev informa que sera executado em um ambiente de desenvolvimento
+- na opção de configuração mostrada executo o comando para criar a tabela: create feedbacks
+
+// Np prisma já tem uma interface embutida para visualizar as tabelas criadas:
+# npx prisma studio -> será aberta uma aba no nevegador
+================================================================
+
+// Como executei o comando 'npx prisma migrate dev' ele cripu uma pasta migrations/ que contém todas as migrations que foram executadas
+migrations: serve para termos um controle de versão do nosso banco de dados
+ex: toda vez que crio uma table a ou altero o BD uma nova migrations é criada par manter um histórico
+migrations: são criadas apenas em ambiente de desenvolvimento e em produção posso executa-las
