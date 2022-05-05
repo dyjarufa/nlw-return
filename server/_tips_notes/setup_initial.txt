@@ -1,0 +1,25 @@
+npm i typescript @types/node ts-node-dev -D
+instalando typescript no projeto / ts-node-dev serve para atualizar a plicação em tempo real(live reload)
+
+
+npx tsc --init 
+ira criar o arquivo tsconfig.json para configura a integração do typescript com o projeto
+
+
+
+================================================================================================================================
+aquivo tsconfig.json:
+
+target": "es2020",   => o nodejs já suporta es2020
+
+"rootDir": "./src",  => pasta principal da minha aplicação
+
+"outDir": "./dist",  => pasta que irá armazenar meus arquivos compilados
+
+/////
+
+crio a pasta src/server.ts (escrevo algum código)
+
+comando npx tsc
+
+irá criar a pasta dist/ com o código compilado

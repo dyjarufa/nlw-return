@@ -1,0 +1,6 @@
+no arquivo package.json, configuro o scripa para a aplicação rodar em modo watchdog
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/server.ts" // fica observando cada modificação na pasta src/ e atualiza
+  },
