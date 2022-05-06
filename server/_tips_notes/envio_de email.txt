@@ -1,0 +1,10 @@
+ // nodemailer lib para envio de emailing
+
+ npm install types@nodemailer -D
+
+
+ Para que seja possível o envio de email, precisamos de um serviço externo
+
+ mailtrap: https://mailtrap.io/
+ 
+ para testar envio de emails
