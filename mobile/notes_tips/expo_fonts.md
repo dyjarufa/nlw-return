@@ -15,5 +15,6 @@ Instalção das fonts:
 
 Verificar se o app esta carregando as fonts:
 ```
-❯ expo install expo-app-loading 
+❯ expo install expo-app-loading // pacote depreciado❗
+❯ yarn add expo-splash-screen@~0.15.1 ✅
 ```
