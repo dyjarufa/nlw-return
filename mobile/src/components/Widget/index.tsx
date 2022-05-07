@@ -5,6 +5,7 @@ import { TouchableOpacity } from "react-native";
 import { gestureHandlerRootHOC } from "react-native-gesture-handler"; // lidar com gestor mesmo estando dentro de um componente
 
 import { theme } from "../../theme";
+import { Options } from "../Options";
 import { styles } from "./styles";
 
  function Widget() {
@@ -30,7 +31,7 @@ import { styles } from "./styles";
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
-
+        <Options />
       </BottomSheet>
     </>
   );
