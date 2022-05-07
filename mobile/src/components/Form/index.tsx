@@ -3,10 +3,12 @@ import React from "react";
 import { TouchableOpacity, View, TextInput, Image, Text } from "react-native";
 
 import { FeedbackType } from "../../components/Widget";
-import { feedbackTypes } from "../../utils/feedbackTypes";
+import { ScreenshotButton } from "../../components/ScreenshotButton";
+import { Button } from "../../components/Button";
 
 import { theme } from "../../theme";
 import { styles } from "./styles";
+import { feedbackTypes } from "../../utils/feedbackTypes";
 
 interface Props {
   feedbackType: FeedbackType;
@@ -36,6 +38,15 @@ export function Form({ feedbackType }: Props) {
         placeholder="Something is not going well? We want to fix it. Tell us in detail what's going on!"
         placeholderTextColor={theme.colors.text_secondary}
       />
+      
+      <View style={styles.footer}>
+        <ScreenshotButton 
+          onTakeShot={() => {}}
+          onRemovedShot={() => {}}
+          screenshot="http://github.com/dyjarufa.png"
+        />
+        <Button isLoading={false}/>
+      </View>
     </View>
   );
 }
