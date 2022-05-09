@@ -11,6 +11,7 @@ import {feedbackTypes} from '../../utils/feedbackTypes'
 
 import { Options } from "../Options";
 import { Form } from "../Form";
+import { Success } from "../Success";
 
 export type FeedbackType = keyof typeof feedbackTypes;
 
@@ -38,7 +39,8 @@ export type FeedbackType = keyof typeof feedbackTypes;
         handleIndicatorStyle={styles.indicator}
       >
         {/* <Options /> */}
-        <Form feedbackType={"BUG"} />
+        {/* <Form feedbackType={"BUG"} /> */}
+        <Success />
       </BottomSheet>
     </>
   );

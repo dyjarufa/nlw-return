@@ -1,0 +1,1 @@
+declare module "*.png"; // Entender tipagens com arquivos final .png
