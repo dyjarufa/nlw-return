@@ -6,7 +6,13 @@ import { Option } from '../Option';
 
 import { styles } from './styles';
 
-export function Options() {
+import {FeedbackType} from '../Widget'
+
+interface OptionsProps {
+  onfeedbackTypeChanged: (feedbackType: FeedbackType) => void;
+}
+
+export function Options({onfeedbackTypeChanged}: OptionsProps) {
   return (
     <View style={styles.container}>
       
@@ -20,9 +26,10 @@ export function Options() {
             .entries(feedbackTypes)
             .map(([key, value]) => (
               <Option 
-              key={key}
-              title={value.title}
-              image={value.image}
+                key={key}
+                title={value.title}
+                image={value.image}
+                onPress={() => onfeedbackTypeChanged(key as FeedbackType)}
               />
               ))        
             }
