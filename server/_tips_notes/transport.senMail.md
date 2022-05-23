@@ -1,5 +1,6 @@
 
-await transport.sendMail({ // await parea aguardar o envio de email
+  ```tsx
+  await transport.sendMail({
     from: "Feedback <dev@feedget.com>",
     to: "Jady Rufio <jadyrufa@gmail.com>",
     subject: "new feedback",
@@ -10,3 +11,4 @@ await transport.sendMail({ // await parea aguardar o envio de email
       `</div>`
     ].join("\n")
   })
+  ```
