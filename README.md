@@ -19,10 +19,10 @@ Check layout in the link below:
 ## Showcase 📸
 
 
-<p align="center">
-  <img width=600 alt="" src="./web/assets/screenshot_leave_feedback.png">
-  <img width=600 alt="" src="./web/assets/screenshot_type_feedback.png">
-  <img width=600 alt="" src="./web/assets/screenshot_feedback_sent.png">
+<p float="left">
+  <img width=300 height="300" alt="" src="./web/assets/screenshot_leave_feedback.png">
+  <img width=300 height="300" alt="" src="./web/assets/screenshot_type_feedback.png">
+  <img width=300 height="300" alt="" src="./web/assets/screenshot_feedback_sent.png">
 </p>
 
 
